@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "circula";
+  src: url("fonts/circula-medium.otf");
+}
+
+@font-face {
+  font-family: "yanone";
+  src: url("fonts/yanone.otf");
+}
+
+@font-face {
+  font-family: "yanonebold";
+  src: url("fonts/yanonebold.otf");
+}
+
+body {
+    background-color:white;
+}
+
+.contenedor {
+    height: 55px;
+    width: 100%;
+    background-color: #f24545;
+    vertical-align: middle;
+    font-family: "circula";
+    position: fixed;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-radius: 0px;   
+    border-color: #b03030;
+}
+
+.menu {
+    position: fixed;
+    top: 53px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 55px;
+    border-color: white;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 6px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.menu a:hover {
+    background-color: #FFF;
+    color: #2c3e50;
+}
+
+.flecha {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#menu-bar {
+    display:none;
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}
+
+#menu-bar:checked ~ label {
+    transform: rotate(180deg);
+}
+
+label {   
+    transition: all 0.5s;
+    transform: rotate(0deg);
+}
+
+header label {
+    float: left;
+}
+
+header .contenedor {
+    display: table;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#section1 {
+    
+    height: 560px;
+    text-align: center;
+}
+
+#section2 {
+    height: 560px;
+    text-align: center;
+    background-color: #EFEFEF;
+}
+
+#banner {
+    position: absolute;
+    background-color: #f24545;
+    margin-top: 55px;
+    width: 100%;
+    z-index: -1;
+    background-image: url("img/cohete.png");
+    background-size: cover;
+}
+
+.imgh {
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    margin-left: 75px;
+    float: left;
+    text-align: center;
+    margin-right: 55%;
+}
+
+.imgh img {
+    width: 100%;
+    
+}
+
+.imgd {
+    position: absolute;
+    margin-top: 1%;
+    margin-bottom: 8%;
+    margin-left: 65%;
+    margin-right: 10%;
+    float: right;
+    text-align: center;
+    
+}
+
+.imgd img {
+    width: 100%;
+    visibility: hidden;
+    
+}
+
+.minusa {
+    font-family: "yanone";
+    font-size: 22px;
+    color: #FFF;
+    
+}
+
+.minusb {
+    font-family: "yanone";
+    font-size: 13px;
+    color: #FFF;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        display: flex;
+        background-color: #f24545;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    
+    .menu a {
+        display: static;
+        color: #FFF;
+        text-decoration: none;
+        font-size: 30px;
+        border-color: #FFF;
+        border-right: 1px;
+        border-left: 1px;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-style: solid;
+        border-radius: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: -1px;
+        text-align: center;
+        right: 20px;
+        width: 100%;
+        height: auto;
+        background-color: #f24545;
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+    
+    .menu a:hover {
+        background-color: rgba(4,4,4,0.1);
+        color: #FFF;
+        width: 110%;
+    }
+    
+    .flecha {
+        display: none;
+    }
+    
+    .imgh {
+    margin-top: 5%;
+    margin-bottom: 8%;
+    margin-left: 180px;
+    float: left;
+    text-align: center;
+    margin-right: 55%;
+    }
+    
+   
+    .imgd {
+    margin-top: 1%;
+    margin-bottom: 8%;
+    margin-left: 55%;
+    margin-right: 15%;
+    float: right;
+    text-align: center;  
+    }
+    
+    .minusa {
+    font-family: "yanone";
+    font-size: 36px;
+    color: #FFF;
+    
+}
+
+.minusb {
+    font-family: "yanone";
+    font-size: 27px;
+    color: #FFF;
+    }
+}
