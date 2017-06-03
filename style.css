@@ -121,7 +121,6 @@ section {
     text-align: center;
     background-color: #EFEFEF;
 }
-
 #banner {
     position: absolute;
     background-color: #f24545;
@@ -129,14 +128,15 @@ section {
     width: 100%;
     z-index: -1;
     background-image: url("img/cohete.png");
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .imgh {
     position: relative;
-    margin-top: 5%;
+    margin-top: 60px;
     margin-bottom: 8%;
-    margin-left: 75px;
+    margin-left: 10%;
     float: left;
     text-align: center;
     margin-right: 55%;
@@ -149,9 +149,9 @@ section {
 
 .imgd {
     position: absolute;
-    margin-top: 1%;
+    margin-top: 60px;
     margin-bottom: 8%;
-    margin-left: 65%;
+    margin-left: 50%;
     margin-right: 10%;
     float: right;
     text-align: center;
@@ -166,8 +166,9 @@ section {
 
 .minusa {
     font-family: "yanone";
-    font-size: 22px;
+    font-size: 18px;
     color: #FFF;
+    wid
     
 }
 
@@ -225,7 +226,7 @@ section {
     }
     
     .imgh {
-    margin-top: 5%;
+    margin-top: 105px;
     margin-bottom: 8%;
     margin-left: 180px;
     float: left;
@@ -235,7 +236,7 @@ section {
     
    
     .imgd {
-    margin-top: 1%;
+    margin-top: 75px;
     margin-bottom: 8%;
     margin-left: 55%;
     margin-right: 15%;
@@ -248,7 +249,7 @@ section {
     font-size: 36px;
     color: #FFF;
     
-}
+    }
 
 .minusb {
     font-family: "yanone";
